@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows - OS Insight</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS específico para a página do Windows (pode ser em um windows.css ou aqui mesmo) */
+        .hero-windows-bg {
+            background-image: url('https://via.placeholder.com/1920x1080/0078D4/FFFFFF?text=Windows+Background');
+            filter: brightness(50%) saturate(150%);
+        }
+        .windows-theme-color {
+            color: var(--color-windows);
+            text-shadow: 0 0 8px rgba(0, 120, 212, 0.6);
+        }
+        .windows-border {
+            border-color: var(--color-windows);
+        }
+        .windows-bg-light {
+            background-color: rgba(0, 120, 212, 0.1);
+        }
+        .windows-feature-icon {
+            color: var(--color-windows);
+            text-shadow: 0 0 10px rgba(0, 120, 212, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-desktop logo-icon"></i> OS<span>Insight</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn active">Sistemas Operacionais <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="windows.html" class="windows-link active">Windows</a>
+                            <a href="macos.html" class="macos-link">macOS</a>
+                            <a href="linux.html" class="linux-link">Linux</a>
+                        </div>
+                    </li>
+                    <li><a href="comparativo.html">Comparativo</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar SOs..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-bg hero-windows-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="windows-theme-color">Microsoft Windows</h1>
+                <p>O sistema operacional mais utilizado no mundo, conhecido por sua versatilidade e compatibilidade.</p>
+                <a href="#overview" class="btn-primary">Visão Geral</a>
+            </div>
+        </section>
+
+        <section id="overview" class="section-padding">
+            <div class="container">
+                <h2 class="section-title windows-theme-color">Visão Geral</h2>
+                <div class="content-block">
+                    <p>O Windows, desenvolvido pela Microsoft, é um sistema operacional gráfico amplamente utilizado em computadores pessoais, laptops e tablets. Desde sua primeira versão em 1985, o Windows evoluiu para se tornar a plataforma dominante, oferecendo uma vasta gama de software e compatibilidade de hardware.</p>
+                    <p>Suas interfaces intuitivas e a constante inovação, como a introdução do menu Iniciar e a integração com serviços de nuvem, o tornaram a escolha padrão para usuários domésticos e corporativos em todo o globo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section-padding bg-secondary">
+            <div class="container">
+                <h2 class="section-title windows-theme-color">Recursos Principais</h2>
+                <div class="features-grid">
+                    <div class="feature-item windows-border">
+                        <i class="fas fa-windows windows-feature-icon"></i>
+                        <h3>Interface Familiar</h3>
+                        <p>Menu Iniciar, barra de tarefas e gerenciamento de janelas para fácil navegação.</p>
+                    </div>
+                    <div class="feature-item windows-border">
+                        <i class="fas fa-gamepad windows-feature-icon"></i>
+                        <h3>Foco em Jogos</h3>
+                        <p>Compatibilidade com a maioria dos jogos e tecnologias como DirectX.</p>
+                    </div>
+                    <div class="feature-item windows-border">
+                        <i class="fas fa-cloud windows-feature-icon"></i>
+                        <h3>Integração Microsoft 365</h3>
+                        <p>Sincronização perfeita com Word, Excel, PowerPoint e OneDrive.</p>
+                    </div>
+                    <div class="feature-item windows-border">
+                        <i class="fas fa-shield-alt windows-feature-icon"></i>
+                        <h3>Windows Defender</h3>
+                        <p>Proteção antivírus e firewall integrados para segurança básica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pros-cons" class="section-padding">
+            <div class="container">
+                <h2 class="section-title windows-theme-color">Vantagens e Desvantagens</h2>
+                <div class="pros-cons-grid">
+                    <div class="pros-block windows-bg-light">
+                        <h3 class="windows-theme-color">Vantagens <i class="fas fa-check-circle"></i></h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ampla compatibilidade de software e hardware.</li>
+                            <li><i class="fas fa-check"></i> Grande variedade de jogos.</li>
+                            <li><i class="fas fa-check"></i> Suporte técnico e comunidade vastos.</li>
+                            <li><i class="fas fa-check"></i> Familiaridade para a maioria dos usuários.</li>
+                        </ul>
+                    </div>
+                    <div class="cons-block windows-bg-light">
+                        <h3 class="windows-theme-color">Desvantagens <i class="fas fa-times-circle"></i></h3>
+                        <ul>
+                            <li><i class="fas fa-times"></i> Menor personalização que o Linux.</li>
+                            <li><i class="fas fa-times"></i> Potenciais problemas de privacidade (telemetria).</li>
+                            <li><i class="fas fa-times"></i> Suscetibilidade a vírus e malware (alvo maior).</li>
+                            <li><i class="fas fa-times"></i> Custo de licença para versões Pro/Home.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action section-padding text-center">
+            <div class="container">
+                <h2>Quer comparar o Windows com outros sistemas?</h2>
+                <a href="comparativo.html" class="btn-secondary">Voltar ao Comparativo Geral</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 OS Insight. Todos os direitos reservados. Impulsionando seu desktop.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

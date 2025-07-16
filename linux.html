@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux - OS Insight</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS específico para a página do Linux */
+        .hero-linux-bg {
+            background-image: url('https://via.placeholder.com/1920x1080/009933/FFFFFF?text=Linux+Background');
+            filter: brightness(50%) saturate(150%);
+        }
+        .linux-theme-color {
+            color: var(--color-linux);
+            text-shadow: 0 0 8px rgba(0, 153, 51, 0.6);
+        }
+        .linux-border {
+            border-color: var(--color-linux);
+        }
+        .linux-bg-light {
+            background-color: rgba(0, 153, 51, 0.1);
+        }
+        .linux-feature-icon {
+            color: var(--color-linux);
+            text-shadow: 0 0 10px rgba(0, 153, 51, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-desktop logo-icon"></i> OS<span>Insight</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn active">Sistemas Operacionais <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="windows.html" class="windows-link">Windows</a>
+                            <a href="macos.html" class="macos-link">macOS</a>
+                            <a href="linux.html" class="linux-link active">Linux</a>
+                        </div>
+                    </li>
+                    <li><a href="comparativo.html">Comparativo</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar SOs..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-bg hero-linux-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="linux-theme-color">Linux</h1>
+                <p>Um sistema operacional de código aberto, conhecido por sua flexibilidade, segurança e vasta comunidade.</p>
+                <a href="#overview" class="btn-primary">Visão Geral</a>
+            </div>
+        </section>
+
+        <section id="overview" class="section-padding">
+            <div class="container">
+                <h2 class="section-title linux-theme-color">Visão Geral</h2>
+                <div class="content-block">
+                    <p>Linux é uma família de sistemas operacionais de código aberto baseados no kernel Linux. Diferente do Windows ou macOS, o Linux é distribuído em diversas "distribuições" (como Ubuntu, Fedora, Mint), cada uma com suas características e público-alvo.</p>
+                    <p>Sua natureza de código aberto permite que desenvolvedores e usuários modifiquem e distribuam o sistema livremente, resultando em uma enorme variedade de ambientes de desktop e aplicações, desde servidores robustos até sistemas embarcados e desktops altamente personalizáveis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section-padding bg-secondary">
+            <div class="container">
+                <h2 class="section-title linux-theme-color">Recursos Principais</h2>
+                <div class="features-grid">
+                    <div class="feature-item linux-border">
+                        <i class="fab fa-linux linux-feature-icon"></i>
+                        <h3>Código Aberto</h3>
+                        <p>Totalmente personalizável e com transparência no código.</p>
+                    </div>
+                    <div class="feature-item linux-border">
+                        <i class="fas fa-lock linux-feature-icon"></i>
+                        <h3>Segurança Robusta</h3>
+                        <p>Menor alvo para malware e grande foco em segurança de sistema.</p>
+                    </div>
+                    <div class="feature-item linux-border">
+                        <i class="fas fa-cogs linux-feature-icon"></i>
+                        <h3>Variedade de Distros</h3>
+                        <p>Escolha entre diversas distribuições para diferentes necessidades.</p>
+                    </div>
+                    <div class="feature-item linux-border">
+                        <i class="fas fa-terminal linux-feature-icon"></i>
+                        <h3>Poder na Linha de Comando</h3>
+                        <p>Ferramentas poderosas para desenvolvedores e administradores de sistema.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pros-cons" class="section-padding">
+            <div class="container">
+                <h2 class="section-title linux-theme-color">Vantagens e Desvantagens</h2>
+                <div class="pros-cons-grid">
+                    <div class="pros-block linux-bg-light">
+                        <h3 class="linux-theme-color">Vantagens <i class="fas fa-check-circle"></i></h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Gratuito e de código aberto.</li>
+                            <li><i class="fas fa-check"></i> Alta segurança e estabilidade.</li>
+                            <li><i class="fas fa-check"></i> Extrema personalização.</li>
+                            <li><i class="fas fa-check"></i> Ótimo para desenvolvedores e servidores.</li>
+                        </ul>
+                    </div>
+                    <div class="cons-block linux-bg-light">
+                        <h3 class="linux-theme-color">Desvantagens <i class="fas fa-times-circle"></i></h3>
+                        <ul>
+                            <li><i class="fas fa-times"></i> Menor compatibilidade com software proprietário.</li>
+                            <li><i class="fas fa-times"></i> Curva de aprendizado para iniciantes.</li>
+                            <li><i class="fas fa-times"></i> Suporte a alguns hardwares pode ser limitado.</li>
+                            <li><i class="fas fa-times"></i> Poucos jogos AAA disponíveis nativamente.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action section-padding text-center">
+            <div class="container">
+                <h2>Compare o Linux com outros sistemas e escolha o seu!</h2>
+                <a href="comparativo.html" class="btn-secondary">Voltar ao Comparativo Geral</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 OS Insight. Todos os direitos reservados. Impulsionando seu desktop.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
